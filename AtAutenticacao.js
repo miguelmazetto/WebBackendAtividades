@@ -1,4 +1,4 @@
-//  Atividade cookies e sessão
+//  Atividade Autenticação Passport JS
 // Nome: Miguel Ferreira Mazetto
 // RA: 2266504
 
