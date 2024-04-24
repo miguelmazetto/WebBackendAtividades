@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+
+  <div>
+    {{#username}}
+        <h1>Tarefas de {{username}}</h1>
+        <form action="/novatarefa" method="post">
+            <label for="newtask">Adicionar Tarefa</label>
+            <input type="text" id="newtask" name="newtask">
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul>{{{tarefas}}}</ul>
+        <a href="/">Home</a>
+        <a href="/sair">Sair</a>
+    {{/username}}
+    {{^username}}
+        <a href="/">Home</a>
+        <a href="/entrar">Entrar</a>
+        <a href="/registrar">Registrar</a>
+    {{/username}}
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {{#username}}
+        <h1>Olá, {{username}}!</h1>
+        <a href="/">Home</a>
+        <a href="/tarefas">Tarefas</a>
+        <a href="/sair">Sair</a>
+    {{/username}}
+    {{#error}}<h1>Erro: {{error}}</h1>{{/error}}
+    {{^username}}
+        <form action="/registrar" method="post">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Senha</label>
+            <input type="text" id="password" name="password">
+
+            <button type="submit">Registrar</button>
+        </form>
+        <a href="/">Home</a>
+        <a href="/entrar">Entrar</a>
+    {{/username}}
+</body>
+</html>

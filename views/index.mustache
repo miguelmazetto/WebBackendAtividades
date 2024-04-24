@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {{#username}}
+        <h1>Olá, {{username}}!</h1>
+    {{/username}}
+    Tarefas Registradas: {{tarefa_count}}
+    {{#username}}
+        <a href="/">Home</a>
+        <a href="/tarefas">Tarefas</a>
+        <a href="/sair">Sair</a>
+    {{/username}}
+    {{^username}}
+        <a href="/">Home</a>
+        <a href="/entrar">Entrar</a>
+        <a href="/registrar">Registrar</a>
+    {{/username}}
+</body>
+</html>
